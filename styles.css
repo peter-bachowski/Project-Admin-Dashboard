@@ -1,7 +1,9 @@
 * {
-  border: 1px solid black;
+/*   border: 1px solid black; */
   margin: 0;
   padding: 0;
+  text-align: center;
+  box-sizing: border-box;
 }
 
 .container  {
@@ -28,7 +30,8 @@
 }
 
 #searchDiv input {
-  width: 100%;
+  width: 80%;
+  
 }
 
 #userInfoDiv {
@@ -49,18 +52,20 @@
   justify-content: flex-start;
 }
 
-#headerButtons {
+#headerButtonsDiv {
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
 
-#headerButtons button {
+#headerButtonsDiv button {
   background-color: #1992d4;
+  font-size: 20px;
   margin: 5px;
   padding: 5px 15px;
-  border-radius: 10px;
-  
+  border-radius: 15px;
+  color: white;
+  border-style: none;
 }
 
 #sidebar {
@@ -73,15 +78,20 @@
 }
 
 #mainContent {
+  position: relative;
   background-color: #e2e8f0;
   display: inline-grid;
-  grid-template: 2fr 1fr / 1fr 8fr;
+  grid-template-columns: 2fr 1fr;
 
 }
 
 #cardContainer {
+  padding-left: 20px;
+  margin-bottom: 50px;
+  grid-column: 1 / 2;
   display: inline-grid;
-  grid-template-columns: repeat(autofit, minmax(150px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 10px;
 }
 
 .profilePic {
@@ -99,7 +109,27 @@
   height: 50px;
 }
 
+h3 {
+  padding-top: 30px;
+  padding-left: 20px;
+  text-align: left;
+}
+
 .card {
-  
+  height: 300px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 5px 5px 20px #c2c2c2;
+  display: flex;
+}
+
+.cardHighlight {
+  width: 10px;
+  height: 100%;
+  background-color: orange;
+}
+
+.cardContent {
+  padding: 30px;
 }
 
