@@ -74,11 +74,14 @@
 
 #mainContent {
   background-color: #e2e8f0;
-  padding: 10px;
-  grid-column: 2 / 3;
   display: inline-grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-template: 2fr 1fr / 1fr 8fr;
 
+}
+
+#cardContainer {
+  display: inline-grid;
+  grid-template-columns: repeat(autofit, minmax(150px, 1fr));
 }
 
 .profilePic {
