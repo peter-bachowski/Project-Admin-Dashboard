@@ -103,8 +103,7 @@
   position: relative;
   background-color: #e2e8f0;
   display: inline-grid;
-  grid-template-columns: 2fr 1fr;
-
+  grid-template: 70px 1fr / 2fr 1fr;
 }
 
 #cardContainer {
@@ -157,7 +156,8 @@ h3 {
   width: 100%;
 }
 
-.cardContent > h4 {
+.cardContent > * {
   text-align: left;
+  padding: 5px;
 }
 
