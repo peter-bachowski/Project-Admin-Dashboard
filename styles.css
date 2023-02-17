@@ -79,11 +79,6 @@
 
 }
 
-#dashTitleDiv > img {
-  -webkit-filter: hue-rotate(180deg);
-  filter: hue-rotate(180deg);
-}
-
 #dashTitleDiv {
   display: flex;
   align-items: center;
