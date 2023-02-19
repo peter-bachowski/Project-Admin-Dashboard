@@ -76,7 +76,17 @@
   grid-row: 1 / 3;
   grid-row-start: 1;
   display: grid;
+}
 
+li {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+li > img {
+  width: 20px;
+  height: 20px;
 }
 
 #dashTitleDiv {
