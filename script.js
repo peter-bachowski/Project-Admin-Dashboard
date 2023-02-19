@@ -38,8 +38,8 @@ function createCardLinks(){
   link3.href = "";
 
   starPlusIcon.src = "./icons/star-plus-outline.png"; //adds the source location for the images of the icons
-  shareIcon.src = "./icons/eye-plus-outline.png";
-  eyePlusIcon.src = "./icons/share-variant-outline.png";
+  shareIcon.src = "./icons/share-variant-outline.png";
+  eyePlusIcon.src = "./icons/eye-plus-outline.png";
 
   starPlusIcon.classList.add("cardIcons");
   eyePlusIcon.classList.add("cardIcons");
