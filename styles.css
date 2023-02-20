@@ -141,14 +141,14 @@ li > img {
   position: relative;
   background-color: #e2e8f0;
   display: inline-grid;
-  grid-template: repeat(3, 1fr) / 3fr 1fr;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: min-content;
   grid-gap: 20px;
   padding: 20px;
   padding-bottom: 50px;
-  min-height: 0;
 }
 
-#mainContent > h3 {
+h3 {
   text-align: left;
 }
 
@@ -170,13 +170,18 @@ li > img {
 
 #trending {
   grid-column: 2 / 3;
+  
+}
+
+#trendingContainer {
+  grid-column: 2 / 3;
 }
 
 #cardContainer {
   grid-column: 1 / 2;
-  grid-row: 2 / 5;
   display: inline-grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-rows: min-content;
   grid-gap: 20px;
   overflow-y: auto;
 }
