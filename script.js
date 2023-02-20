@@ -9,7 +9,7 @@ window.onload = () => {//when the page loads
   createCardLinks();
 
   for (let i = 0; i < nameElements.length; i++) { //fix this
-    nameElements[i].innerHTML = "Peter Bachowski";
+    nameElements[i].innerText = "Peter Bachowski";
   }
 }
 

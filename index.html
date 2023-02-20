@@ -21,13 +21,13 @@
       <div id="userInfoDiv">
         <img src="./icons/bell-ring-outline.png" width="25px" height="25px">
         <div class="profilePic" id="profilePicSmall"></div>
-        <div class="userName">Peter</div>
+        <div class="userName"></div>
       </div>
       <div id="userHeaderText">
         <div class="profilePic" id="profilePicLarge"></div>
         <div id="greetingDiv">
           <p id="greeting">Hey there, </p>
-          <div class="userName">Peter</div>
+          <div class="userName"></div>
         </div>
       </div>
       <div id="headerButtonsDiv">
@@ -38,30 +38,29 @@
     </div>
     <div id="sidebar">
 
-      <div id="dashTitleDiv">
-        <img src="./icons/view-dashboard.png" alt="" width="50px" height="50px">
-        <h3 id="dashTitle">Dashboard</h3>
-      </div>
+      <a href="">
+        <div id="dashTitleDiv">
+            <img src="./icons/view-dashboard.png" alt="" width="40px" height="40px">
+            <h3 id="dashTitle">Dashboard</h3>
+        </div>
+      </a>
       <ul>
-        <li><img src="./icons/home.png">Home</li>
-        <li><img src="./icons/card-account-details-outline.png">Profile</li>
-        <li><img src="./icons/message-reply.png">Messages</li>
-        <li><img src="./icons/clock-time-three.png">History</li>
-        <li><img src="./icons/file-multiple.png">Tasks</li>
-        <li><img src="./icons/account-group.png">Communities</li>
+        <a href=""><li><img src="./icons/home.png">Home</li></a>
+        <a href=""><li><img src="./icons/card-account-details-outline.png">Profile</li></a>
+        <a href=""><li><img src="./icons/message-reply.png">Messages</li></a>
+        <a href=""><li><img src="./icons/clock-time-three.png">History</li></a>
+        <a href=""><li><img src="./icons/file-multiple.png">Tasks</li></a>
+        <a href=""><li><img src="./icons/account-group.png">Communities</li></a>
       </ul>
       <ul>      
-        <li><img src="./icons/cog.png">Settings</li>       
-        <li><img src="./icons/help-box.png">Support</li>
-        <li><img src="./icons/shield-check.png">Privacy</li>
+        <a href=""><li><img src="./icons/cog.png">Settings</li></a>       
+        <a href=""><li><img src="./icons/help-box.png">Support</li></a>
+        <a href=""><li><img src="./icons/shield-check.png">Privacy</li></a>
       </ul>
     </div>
     <div id="mainContent">
       <h3 id="mainHeader">Your Projects</h3>
-      <h3 id="announcements">Announcements</h3>
-
       <div id="cardContainer">
-
         <div class="card">
           <div class="cardHighlight"></div>
           <div class="cardContent">
@@ -71,7 +70,6 @@
           </div>
         </div>
 
-
         <div class="card">
           <div class="cardHighlight"></div>
           <div class="cardContent">
@@ -80,7 +78,6 @@
             </p>
           </div>
         </div>
-
 
         <div class="card">
           <div class="cardHighlight"></div>
@@ -117,6 +114,16 @@
             </p>
           </div>
         </div>
+      </div>
+
+      <h3 id="announcements">Announcements</h3>
+
+      <div class="card" id="announcementContainer">Hello
+      </div>
+      <h3 id="trending">Trending</h3>
+      <div class="card" id="trendingContainer">
+        hello again
+      </div>
       </div>
 
     </div>
