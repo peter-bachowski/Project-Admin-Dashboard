@@ -16,7 +16,7 @@
 #header {
   background-color: #ffffff;
   display: inline-grid;
-  grid-template: 1fr 2fr / 2fr 1fr;
+  grid-template: 1fr 1fr / 2fr 1fr;
   padding: 10px 20px;
 }
 
@@ -88,8 +88,8 @@
 #dashTitleDiv {
   display: flex;
   align-items: center;
-  gap: 10px;
-  padding: 10px;
+  gap: 20px;
+  padding: 15px;
 }
 
 #dashTitle {
@@ -106,12 +106,12 @@
 #sidebar > ul > a > li {
   display: flex;
   align-items: center;
-  gap: 5px;
+  gap: 15px;
 }
 
 li > img {
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
 }
 
 .profilePic {
@@ -141,6 +141,10 @@ li > img {
   padding-bottom: 50px;
 }
 
+#mainContent > h3 {
+  padding-top: 10px;
+}
+
 #mainHeader {
   grid-column: 1 / 2;
   grid-row: 1 / 2;
@@ -158,6 +162,10 @@ li > img {
   padding-bottom: 10px;
 }
 
+.infoContainer > h4 {
+  padding-bottom: 5px;
+}
+
 #announcements {
   grid-column: 2 / 3;
   grid-row: 1 / 2;
@@ -168,11 +176,11 @@ li > img {
   display: flex;
   flex-direction: column;
   height: auto !important;
-  padding: 20px;
+  padding: 30px;
 }
 
 #announcementContainer > div > p {
-  font-size: 10px;
+  font-size: 15px;
   text-align: left;
 }
 
@@ -201,9 +209,9 @@ li > img {
 #cardContainer {
   grid-column: 1 / 2;
   display: inline-grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  grid-template-rows: min-content;
-  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  grid-template-rows: repeat(auto-fill, minmax(240px, 1fr));
+  grid-gap: 30px;
 }
 
 .card {
@@ -258,8 +266,4 @@ a {
 
 h3 {
   padding-top: 30px;
-}
-
-h4 {
-  font-weight: 1200;
 }
