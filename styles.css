@@ -73,6 +73,7 @@
   border-radius: 15px;
   color: white;
   border-style: none;
+  cursor: pointer
 }
 
 #sidebar {
@@ -117,6 +118,8 @@ li > img {
 .profilePic {
   border-radius: 50%;
   background-color: black;
+  display: flex;
+  flex-shrink: 0;
   background-image: url("./images/House-of-Beauty-by-Naluria.png");
 }
 
@@ -138,7 +141,7 @@ li > img {
   grid-template-rows: min-content;
   grid-gap: 20px;
   padding: 20px;
-  padding-bottom: 50px;
+  padding-bottom: 40px;
 }
 
 #mainContent > h3 {
@@ -171,12 +174,17 @@ li > img {
   grid-row: 1 / 2;
 }
 
+#anouncementsContainer {
+  justify-content: space-between;
+}
+
 .sideContainer {
   grid-column: 2 / 3;
   display: flex;
+  min-width: 250px;
   flex-direction: column;
   height: auto !important;
-  padding: 30px;
+  padding: 25px;
 }
 
 #announcementContainer > div > p {
@@ -210,7 +218,7 @@ li > img {
   grid-column: 1 / 2;
   display: inline-grid;
   grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-  grid-template-rows: repeat(auto-fill, minmax(240px, 1fr));
+  grid-template-rows: 1fr 1fr 1fr;
   grid-gap: 30px;
 }
 
