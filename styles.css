@@ -149,12 +149,20 @@ li > img {
 }
 
 h3 {
+  padding-top: 30px;
   text-align: left;
 }
 
 #mainHeader {
   grid-column: 1 / 2;
   grid-row: 1 / 2;
+}
+
+#rightContentContainer {
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 }
 
 #announcements {
@@ -164,17 +172,18 @@ h3 {
 
 #announcementContainer {
   grid-column: 2 / 3;
-
   background-color: white;
+  height: 30%;
 }
 
 #trending {
   grid-column: 2 / 3;
-  
+  padding-bottom: 10px;
 }
 
 #trendingContainer {
   grid-column: 2 / 3;
+  height: 30%;
 }
 
 #cardContainer {
@@ -183,7 +192,6 @@ h3 {
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   grid-template-rows: min-content;
   grid-gap: 20px;
-  overflow-y: auto;
 }
 
 .card {
